@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+    <script src="../JavaScript/Js.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="../HTML/index.html">
+            <img id="Logo" src="../Images/Logo1.png" alt="">
+        </a>
+        <div class="Menu">
+            <button class="Nav-Button" onclick="toggle_navigation()"> <i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="Nav-Bar">
+            <ul>
+                <li class="Nav-Item"> <a href="../HTML/index.html">Home</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Users.html">Users</a></li>
+                <li class="Nav-Item"> <a style="text-decoration: underline;">Login</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h2 style="text-align: center; color: palevioletred; padding: 50px;">Login</h2>
+    <div id="Reg-Form">
+        <form>
+            <div class="input">
+                <div>
+                    <label for="user-name">User Name:</label><br>
+                </div>
+                <input type="text" id="user-name" name="user-name"> <br>
+            </div>
+
+            <div class="input">
+                <div>
+                    <label for="Password">Password:</label><br>
+                </div>
+                <input type="password" id="password" name="password"> <br>
+            </div>
+        </form>
+        <div id="reg-Buttons">
+            <button class="Reg-button" type="submit"> Login </button>
+
+        </div>
+        <div id="Login-with">
+            <div>
+                <p style="font-size: 1.3rem;"> Forget password</p>
+                <p style="font-size: 1.3rem;"> Login with</p>
+            </div>
+            <div>
+                <a class="login-with"><i style="margin-right:20px" class="fa-brands fa-google"></i></a>
+                <a class="login-with"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <footer style="top: 500px">
+        <div class="wide">
+            <div id="section1">
+                <h4>About US</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum vero dolores similique
+                        expedita, mollitia qui veniam minus! Odit doloremque sit</p>
+            </div>
+            <div id="section2">
+                <ul style="list-style-type: none;">
+                    <h4>MAIN MENU</h4>
+                    <li> <a href="../HTML/index.html">Home</a></li>
+                    <li> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                    <li> <a href="../HTML/Users.html">Users</a></li>
+                    <li> <a href="../HTML/Login.html">Login</a></li>
+                    <li> <a href="../HTML/Register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="section3">
+                <p>NEW OFERS DIRECT TO YOUR INBOX</p>
+                <form>
+                    <input type="mail" style="width: 70%;" placeholder=" your mail@gmail.com">
+                    <button type="submit" id="Subscrie"> SUBSCRIBE</button>
+                </form>
+            </div>
+            <div id="section4">
+                <p>Follow US</p>
+                <div class="Icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="small">
+            <div id="section1" >
+                <button  class="footer-button" onclick="show(0)">About US</button> 
+                <div class="footer-section">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum vero dolores similique
+                        expedita, mollitia qui veniam minus! Odit doloremque sit</p>
+                </div>
+            </div>
+            <div id="section2" >
+                <button class="footer-button" onclick="show(1)"> MAIN MENU</button> 
+                <div class="footer-section">
+                <ul style="list-style-type: none;">
+                    <li> <a href="../HTML/index.html">Home</a></li>
+                    <li> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                    <li> <a>Users</a></li>
+                    <li> <a href="../HTML/Login.html">Login</a></li>
+                    <li> <a href="../HTML/Register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div id="section3">
+                <p>NEW OFERS DIRECT TO YOUR INBOX</p>
+                <form>
+                    <input type="mail" style="width: 70%;" placeholder=" your-mail@gmail.com">
+                    <button type="submit" id="Subscrie"> SUBSCRIBE</button>
+                </form>
+            </div>
+            <div id="section4">
+                <p>Follow US</p>
+                <div class="Icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

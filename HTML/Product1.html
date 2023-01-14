@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>La Roche Posay</title>
+    <script src="../JavaScript/Js.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="../HTML/index.html">
+            <img id="Logo" src="../Images/Logo1.png" alt="">
+        </a>
+        <div class="Menu">
+            <button class="Nav-Button" onclick="toggle_navigation()"> <i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="Nav-Bar">
+            <ul>
+                <li class="Nav-Item"> <a href="../HTML/index.html">Home</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Users.html">Users</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Login.html">Login</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div class="product-Img-section">
+            <img class="product-Img" src="../Images/LaRoche.jpg" alt="Sun Block La Roche">
+        </div>
+        <div class="product-info">
+            <h2 style="padding: 5px;"> Sun Block La Roche</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus aliquid libero odio quas,
+                dolore,
+                quibusdam deleniti ad autem accusantium tempora molestias nemo modi inventore quos doloribus, laboriosam
+                fuga. Aperiam.
+            </p>
+            <p> 500 EGP </p>
+            <div id="Rate">
+                <p style="color: rgb(0, 0, 0);">Rate:</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <button style="height: 50px;"> Add to Cart </button>
+        </div>
+
+    </div>
+    <footer style="top: 750px">
+        <div class="wide">
+            <div id="section1">
+                <h4>About US</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum vero dolores similique
+                    expedita, mollitia qui veniam minus! Odit doloremque sit</p>
+            </div>
+            <div id="section2">
+                <ul style="list-style-type: none;">
+                    <h4>MAIN MENU</h4>
+                    <li> <a href="../HTML/index.html">Home</a></li>
+                    <li> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                    <li> <a href="../HTML/Users.html">Users</a></li>
+                    <li> <a href="../HTML/Login.html">Login</a></li>
+                    <li> <a href="../HTML/Register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="section3">
+                <p>NEW OFERS DIRECT TO YOUR INBOX</p>
+                <form>
+                    <input type="mail" style="width: 70%;" placeholder=" your mail@gmail.com">
+                    <button type="submit" id="Subscrie"> SUBSCRIBE</button>
+                </form>
+            </div>
+            <div id="section4">
+                <p>Follow US</p>
+                <div class="Icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="small">
+            <div id="section1">
+                <button class="footer-button" onclick="show(0)">About US</button>
+                <div class="footer-section">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum vero dolores similique
+                        expedita, mollitia qui veniam minus! Odit doloremque sit</p>
+                </div>
+            </div>
+            <div id="section2">
+                <button class="footer-button" onclick="show(1)"> MAIN MENU</button>
+                <div class="footer-section">
+                    <ul style="list-style-type: none;">
+                        <li> <a href="../HTML/index.html">Home</a></li>
+                        <li> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                        <li> <a>Users</a></li>
+                        <li> <a href="../HTML/Login.html">Login</a></li>
+                        <li> <a href="../HTML/Register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="section3">
+                <p>NEW OFERS DIRECT TO YOUR INBOX</p>
+                <form>
+                    <input type="mail" style="width: 70%;" placeholder=" your-mail@gmail.com">
+                    <button type="submit" id="Subscrie"> SUBSCRIBE</button>
+                </form>
+            </div>
+            <div id="section4">
+                <p>Follow US</p>
+                <div class="Icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

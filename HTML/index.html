@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ESTRELLA</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../HTML/index.html">
+            <img id="Logo" src="../Images/Logo1.png" alt="">
+        </a>
+        <div class="Menu">
+            <button class="Nav-Button" onclick="toggle_navigation()"> <i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="Nav-Bar">
+            <ul>
+                <li class="Nav-Item"> <a style="text-decoration: underline;" href="../HTML/index.html">Home</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Users.html">Users</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Login.html">Login</a></li>
+                <li class="Nav-Item"> <a href="../HTML/Register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- id="first_slide" -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img class="slide_img" src="../Images/1.jpg" style="width:100%">
+            <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img class="slide_img" src="../Images/2.jpg" style="width:100%">
+            <!-- <div class="text">Caption Two</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img class="slide_img" src="../Images/3.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img class="slide_img" src="../Images/11.jpg" style="width:100%">
+            <!-- <div class="text">Caption Three</div> -->
+        </div>
+
+        <!-- Next and previous buttons -->
+        <!-- <a class="prev" style="color:rgb(238, 85, 136);" onclick="plusSlides(-1)">&#10094;</a> -->
+        <!-- <a class="next" style="color:rgb(238, 85, 136);" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+    <!-- <br> -->
+
+    <!-- The dots/circles -->
+    <div id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="products">
+        <div>
+            <p class="page-title" style="  text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 24px; font-weight: bold;
+            padding: 20px; "> Featrued Products </p>
+        </div>
+        <div class="product-Item">
+            <a href="../HTML/Product1.html"><img class="produc-Img" src="../Images/LaRoche.jpg"
+                    alt=" Sun Block La Roche"></a>
+            <p class="Product-Desc"> Sun Block La Roche</p>
+            <p class="Product-price"> 500 EGP </p><br>
+            <button> Add to Cart </button>
+            <button><a href="../HTML/Product1.html" style="width: 100%;"> View More </a> </button>
+        </div>
+
+        <div class="product-Item">
+            <a href="../HTML/Product2.html"><img class="produc-Img" src="../Images/product2.jpg"
+                    alt="Avene Cleanance Gel"></a>
+            <p class="Product-Desc"> Avene Cleanance Gel</p>
+            <p class="Product-price"> 300 EGP </p><br>
+            <button> Add to Cart </button>
+            <button><a href="../HTML/Product2.html" style="width: 100%;"> View More </a> </button>
+        </div>
+
+        <div class="product-Item">
+            <a href="../HTML/Product3.html"><img class="produc-Img" src="../Images/TheOrdinary.jpg" alt="The Ordinary Niacinamide"></a>
+            <p class="Product-Desc"> The Ordinary Niacinamide</p>
+            <p class="Product-price"> 500 EGP </p><br>
+            <button> Add to Cart </button>
+            <button><a href="../HTML/Product3.html" style="width: 100%;"> View More </a> </button>
+        </div>
+
+        <div class="product-Item">
+            <a href="../HTML/Product4.html"><img class="produc-Img" src="../Images/clinique.jpg" alt="Clinique moisturizing Gel"></a>
+            <p class="Product-Desc"> Clinique Moisturizing Gel</p>
+            <p class="Product-price"> 600 EGP </p><br>
+            <button> Add to Cart </button>
+            <button><a href="../HTML/Product4.html" style="width: 100%;"> View More </a> </button>
+        </div>
+    </div>
+    <footer style="top: 200px;">
+        <div class="wide">
+            <div id="section1">
+                <h4>About US</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum vero dolores similique
+                    expedita, mollitia qui veniam minus! Odit doloremque sit</p>
+            </div>
+            <div id="section2">
+                <ul style="list-style-type: none;">
+                    <h4>MAIN MENU</h4>
+                    <li> <a href="../HTML/index.html">Home</a></li>
+                    <li> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                    <li> <a href="../HTML/Users.html">Users</a></li>
+                    <li> <a href="../HTML/Login.html">Login</a></li>
+                    <li> <a href="../HTML/Register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="section3">
+                <p>NEW OFERS DIRECT TO YOUR INBOX</p>
+                <form>
+                    <input type="mail" style="width: 70%;" placeholder=" your mail@gmail.com">
+                    <button type="submit" id="Subscrie"> SUBSCRIBE</button>
+                </form>
+            </div>
+            <div id="section4">
+                <p>Follow US</p>
+                <div class="Icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="small">
+            <div id="section1">
+                <button class="footer-button" onclick="show(0)">About US</button>
+                <div class="footer-section">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum vero dolores similique
+                        expedita, mollitia qui veniam minus! Odit doloremque sit</p>
+                </div>
+            </div>
+            <div id="section2">
+                <button class="footer-button" onclick="show(1)"> MAIN MENU</button>
+                <div class="footer-section">
+                    <ul style="list-style-type: none;">
+                        <li> <a href="../HTML/index.html">Home</a></li>
+                        <li> <a href="../HTML/Contact-Us.html">Contact Us</a></li>
+                        <li> <a>Users</a></li>
+                        <li> <a href="../HTML/Login.html">Login</a></li>
+                        <li> <a href="../HTML/Register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="section3">
+                <p>NEW OFERS DIRECT TO YOUR INBOX</p>
+                <form>
+                    <input type="mail" style="width: 70%;" placeholder=" your-mail@gmail.com">
+                    <button type="submit" id="Subscrie"> SUBSCRIBE</button>
+                </form>
+            </div>
+            <div id="section4">
+                <p>Follow US</p>
+                <div class="Icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../JavaScript/Js.js"></script>
+
+</html>
